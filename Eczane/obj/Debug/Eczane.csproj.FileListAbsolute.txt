@@ -35,3 +35,4 @@ C:\Users\uselc\source\repos\Eczane\Eczane\bin\Debug\FluentValidation.dll
 C:\Users\uselc\source\repos\Eczane\Eczane\bin\Debug\System.ComponentModel.Annotations.dll
 C:\Users\uselc\source\repos\Eczane\Eczane\bin\Debug\System.Linq.Dynamic.dll
 C:\Users\uselc\source\repos\Eczane\Eczane\bin\Debug\FluentValidation.xml
+C:\Users\uselc\source\repos\Eczane\Eczane\obj\Debug\Eczane.csproj.AssemblyReference.cache

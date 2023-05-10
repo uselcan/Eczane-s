@@ -22,7 +22,7 @@ namespace Eczane
         Connection_ context = new Connection_(); // veritabanı bağlantısı 
         IlacSorgula sorgu = new IlacSorgula(); // İlaç sorgulama ile ilgili sql kodlar
         IlacGetir op = new IlacGetir();
-       
+
         int ID;
         string html;
 
@@ -278,7 +278,7 @@ namespace Eczane
 
         private void btnFavari_Click(object sender, EventArgs e)
         {
-            if (lblBarkodno.Text == "#")
+            if (lblBarkodno.Text == "#" && lblBarkodno.Text != null)
             {
                 MessageBox.Show("Favoriye eklemek için bir ilaç seçin");
                 return;
@@ -303,14 +303,14 @@ namespace Eczane
             context.sqlite.Close();
             Listele();
         }
-   
+
         private void btnIleri_Click(object sender, EventArgs e)
         {
             int a = listView1.Items.Count;
             int i = 1;
             try
             {
-              
+
 
                 btnGeri.Enabled = true;
                 int index = listView1.SelectedIndices[0] + 1;
@@ -321,15 +321,15 @@ namespace Eczane
                 if (i == a)
                 {
                     btnIleri.Enabled = false;
-              
+
                 }
 
 
             }
             catch (Exception)
             {
-                
-       
+
+
             }
 
 
@@ -351,7 +351,7 @@ namespace Eczane
                 if (i == a)
                 {
                     btnIleri.Enabled = false;
-                
+
                 }
             }
             catch (Exception)
